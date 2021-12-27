@@ -1,0 +1,11 @@
+[Unit]
+Description=uWSGI instance to serve payment api
+After=network.target
+[Service]
+User=sunil
+Group=www-data
+WorkingDirectory=/media/sunil/06930e3e-f4e4-4037-bee5-327c2551e897/Downloads/PycharmProjects/word_net/payment/api
+Environment="PATH=/media/sunil/06930e3e-f4e4-4037-bee5-327c2551e897/Downloads/PycharmProjects/word_net/payment/payment_code/bin"
+ExecStart=/media/sunil/06930e3e-f4e4-4037-bee5-327c2551e897/Downloads/PycharmProjects/word_net/payment/payment_code/bin/uwsgi --ini api.ini
+[Install]
+WantedBy=multi-user.target

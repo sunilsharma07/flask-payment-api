@@ -1,0 +1,75 @@
+
+virtual-env 
+============
+
+https://www.youtube.com/watch?v=KxvKCSwlUv8&list=LL&index=4
+
+https://www.youtube.com/watch?v=nnhjvHYRsmM&list=LL&index=3&t=96s
+
+
+Lets get started with NGNIX + WSGI + Load balancing + Redis + Docker + Flask + unit test
+===================
+
+https://www.youtube.com/watch?v=45Jqr3DYjh8&list=LL&index=1
+https://www.youtube.com/watch?v=m24mWPcRbjQ
+
+
+
+automatically-create-requirements-txt
+=========================================
+
+https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt
+
+
+Flask Web API “ProcessPayment”
+================================
+
+
+https://github.com/sahasrara62/filed_payments
+
+
+https://programmerah.com/linux-ubuntu-django-error-uwsgi-error-while-loading-shared-libraries-libpcre-so-1-41007/
+=====================================
+
+pip uninstall uwsgi
+
+uwsgi --version
+
+sudo apt-get install libpcre3 libpcre3-dev # Install the required packages
+
+find/-name libpcre.so.3 # Find libpcre.so.3 (usually in the root directory /lib/x86_64-linux-gnu)
+
+Find /lib/x86_64-linux-gnu/libpcre.so.3
+
+sudo ln -s /lib/x86_64-linux-gnu/libpcre.so.3 /usr/lib/libpcre.so.1 # Just make a soft link
+
+
+https://stackoverflow.com/questions/65526849/uwsgi-error-with-pcre-ubuntu-20-04-error-while-loading-shared-libraries-libpcre
+
+
+
+run path uwsgi ==> ../payment_code/bin/uwsgi api.ini
+
+
+service
+===============
+
+sudo systemctl daemon-reload (after changes)
+
+service file should be there in both path
+
+1. /etc/systemd  2./etc/systemd/system/
+
+sudo systemctl stop api_payment
+
+sudo systemctl status api_payment
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04
+
+
+test config file 
+=======================
+sudo nginx -t
+
