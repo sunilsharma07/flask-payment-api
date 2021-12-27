@@ -89,9 +89,10 @@ def security_code():
     assert response_2.status_code == 200
     assert response_3.status_code == 400
 
-# security_code()
-# payment_card_exp_date()
-# valid_input_data_with_differ_amount()
-# endpoint_with_request()
-# payment_with_empty_json()
-# payment_invalid_credit_card_detail()
+
+security_code()
+payment_card_exp_date()
+valid_input_data_with_differ_amount()
+endpoint_with_request()
+payment_with_empty_json()
+payment_invalid_credit_card_detail()

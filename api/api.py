@@ -7,6 +7,10 @@ from utility.paymentgatway import ExternalPayment
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+@app.route("/")
+def hello():
+    return "<h1 style='color:blue'>Hello There!</h1>"
+
 @app.route("/ProcessPayment", methods=['POST'])
 def payment():
     if request.method == 'POST':
@@ -40,4 +44,6 @@ def payment():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5002)
+    app.run(host='0.0.0.0')
+# else:
+#     application = app
