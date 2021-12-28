@@ -1,0 +1,12 @@
+server {
+
+  listen 5003;
+
+  location / {
+    include uwsgi_params;
+    # uwsgi_pass unix:/media/sunil/06930e3e-f4e4-4037-bee5-327c2551e897/Downloads/PycharmProjects/word_net/payment/api/api.sock;
+    uwsgi_pass unix:/usr/share/nginx/html/test/api.sock;
+  }
+
+}
+
